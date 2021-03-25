@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here 
   plugins: [], */
   siteMetadata: {
-    title: 'Sura website',
+    title: 'Sura Gatsby starter',
     description: 'web dev portfolio',
     copyright: 'This website is copyright 2021'
   },
