@@ -13,19 +13,16 @@ function Navbar() {
     }
   `)
 
-    console.log('Data', data)
-
    const { title, description } = data.site.siteMetadata
     return (
         <nav>
             <h1>{ title }</h1>
-            <h2>{ description }</h2>
             <div className="links">
                 <Link to="/">Home</Link> 
                 <Link to="/about">About</Link> 
                 <Link to="/projects">Projects to portfolio</Link>
             </div>
-           
+            <div><h2>{ description }</h2></div>
         </nav>
     )
 }
