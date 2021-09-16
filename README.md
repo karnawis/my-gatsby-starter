@@ -3,6 +3,10 @@ title: Readme file
 stack: HTML & CSS
 slug: readme
 ---
+
+//removed this from home page
+          <Img fluid={data.file.childImageSharp.fluid } />
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
