@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from './Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.css'
+import Header from './Header'
 
 function Layout({ children }) {
     return (
         <div className="layout">
-            <Navbar />
+            <Header />
             <div className="content">
                 { children }
             </div>
