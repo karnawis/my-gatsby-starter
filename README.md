@@ -20,7 +20,8 @@ slug: readme
 * if there's any issue try `yarn cache clean` or try `rm -RF node_modules`
 
 # to do
-* include a node versiona and make sure you use it .nvm
+* include a node versiona and make sure you use it .nvmrc
 * add main components footer, gallery
+* start adding proptypes
 
 
