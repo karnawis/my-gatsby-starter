@@ -1,4 +1,6 @@
 body {
   font: 100% Helvetica, sans-serif;
-  color: #333;
-  background-color: #e73ee7; }
+  color: #333; }
+
+nav {
+  color: #fef !important; }
