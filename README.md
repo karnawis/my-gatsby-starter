@@ -7,6 +7,7 @@ slug: readme
 # Highlights
 ## Gatsby starter 🚀 
 ### Running
+* `nvm use`
 * run `yarn install` or `npm install` make sure you have 
 * to run `yarn develop` and `yarn watch-css` or `npm run develop`  
 * to run customised development `yarn super-develop`

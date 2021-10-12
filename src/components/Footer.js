@@ -2,9 +2,9 @@ import React from 'react'
 
     const Footer = (year) => {
         return (
-            <div>
-            <footer className="page-footer font-small blue">Copyright 2021 @sura.me</footer>
-            </div>
+            <footer>
+                <p className="text-center p-5 page-footer font-small blue">Copyright 2021 @sura.me</p>
+            </footer>            
         )
     }
 
