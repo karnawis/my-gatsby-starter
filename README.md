@@ -3,6 +3,7 @@ title: Readme file
 stack: HTML & CSS
 slug: readme
 ---
+Is it gatsby develop??
 
 # Highlights
 ## Gatsby starter 🚀 
@@ -21,7 +22,12 @@ slug: readme
 * if there's any issue try `yarn cache clean` or try `rm -RF node_modules`
 
 # to do
-* add main components footer, gallery
-* start adding proptypes
+* resolve `gatsby develop` or `npm develop`
+* check node, npm, and yarn versions
+* check `gatsby cli` and `gatsby-plugin-sass`
+* add `eslint A11y` use menu `aria-label`
+* add components gallery
+* add font awesome with aria-label
+* start adding `proptypes`
 * guide https://github.com/meganesu/react-tictactoe#adding-a-css-preprocessor-sass-less-etc
 
