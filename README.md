@@ -24,7 +24,7 @@ Is it gatsby develop??
 
 # to do
 * resolve `gatsby develop` or `npm develop`
-* check node, npm, and yarn versions
+* check node, npm, and yarn versions > upgraded
 * check `gatsby cli` and `gatsby-plugin-sass`
 * add `eslint A11y` use menu `aria-label`
 * add components gallery
@@ -32,3 +32,6 @@ Is it gatsby develop??
 * start adding `proptypes`
 * guide https://github.com/meganesu/react-tictactoe#adding-a-css-preprocessor-sass-less-etc
 
+
+## Future improvements
+* Gatsby comes with eslint A11y configured, but you can take more control to configure it to override it's defaults [gatsby elsint](https://www.gatsbyjs.com/plugins/gatsby-plugin-eslint/) and [YouTube eslint](https://www.youtube.com/watch?v=PZWnJYj1HbY)
