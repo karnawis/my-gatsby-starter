@@ -20,6 +20,7 @@ Is it gatsby develop??
 
 ### Notes
 * if there's any issue try `yarn cache clean` or try `rm -RF node_modules`
+* pay attention if there's yarn.lock and package.json.lock it should be only one
 
 # to do
 * resolve `gatsby develop` or `npm develop`
