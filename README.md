@@ -23,15 +23,25 @@ Is it gatsby develop??
 * pay attention if there's yarn.lock and package.json.lock it should be only one
 
 # to do
+* add social media icons to utility or a component
+* implement social media icons https://brockduncan.com/using-fontawesome-with-gatsby-and-react/ 
+* I'm currently working on adding font awesome. following this article. 
+i had incompatibility problem with node so I had to downgrade the version to 12, not 14 https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react
+* check whether to use node 12 or 14, Gatsby is asking for 14, how it is not compatible with many packages like font awesome, eslint..etc
 * resolve `gatsby develop` or `npm develop`
 * check node, npm, and yarn versions > upgraded
 * check `gatsby cli` and `gatsby-plugin-sass`
-* add `eslint A11y` use menu `aria-label`
+* add `eslint A11y` use menu `aria-label` > done
+
 * add components gallery
-* add font awesome with aria-label
+* add [font awesome with aria-label](https://brockduncan.com/using-fontawesome-with-gatsby-and-react/)
 * start adding `proptypes`
 * guide https://github.com/meganesu/react-tictactoe#adding-a-css-preprocessor-sass-less-etc
 
 
 ## Future improvements
-* Gatsby comes with eslint A11y configured, but you can take more control to configure it to override it's defaults [gatsby elsint](https://www.gatsbyjs.com/plugins/gatsby-plugin-eslint/) and [YouTube eslint](https://www.youtube.com/watch?v=PZWnJYj1HbY)
+* Gatsby comes with eslint A11y configured, but you can take more control to configure it to override it's defaults [gatsby elsint](https://www.gatsbyjs.com/plugins/gatsby-plugin-eslint/) and [YouTube eslint](https://www.youtube.com/watch?v=PZWnJYj1HbY) 
+
+```sh
+console.log('read me')
+```
