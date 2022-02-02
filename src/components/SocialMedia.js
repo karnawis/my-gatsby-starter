@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../utilities/fontawesome'
 
 //Move this to utilities which didn't work initially util/fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
