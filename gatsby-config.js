@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: 'https://localhost',
     description: 'Description - Gatsby starter 2022',
     contact: 'sk@sura.me',
+    year: `2022`,
   },
   plugins: [
     `gatsby-transformer-remark`,
