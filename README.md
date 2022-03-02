@@ -30,8 +30,8 @@ slug: readme
 
 # to do
 
+- remove any sass related styles from package.json or anywhere
 - check npm or yarn? like 'style-components didn't work with just yarn add, it worked with npm install'
-- use gatsby styled-component globalstyle.js
 - social media branch and react renderer
 - enhance SEO like Chris's blog
 - check whether to use node 12 or 14, Gatsby is asking for 14, how it is not compatible with many packages like font awesome, eslint..etc
@@ -55,3 +55,7 @@ slug: readme
 ```sh
 console.log('read me')
 ```
+
+### done
+
+- use gatsby styled-component globalstyle.js > done

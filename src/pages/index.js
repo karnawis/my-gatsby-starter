@@ -1,15 +1,38 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import styled from 'styled-components'
 import banner from '../images/banner.jpeg'
-import * as styles from '../styles/home.module.css'
 
 // import Img from 'gatsby-image'
+
+const MainContainerStyle = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+  h2 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  a {
+    display: inline-block;
+    background: #f74b2d;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+`
 
 export default function Home({ data }) {
   // console.log(data)
   return (
     <>
-      <section className={styles.main}>
+      <MainContainerStyle>
         <img src={banner} width="100%" alt="test" />
         <h3>a software engineer, artist and activist</h3>
         <p>
@@ -23,11 +46,11 @@ export default function Home({ data }) {
           have also learnt to always bring up the best in others and make the
           best out of circumstances to meet an end goal.
         </p>
-        <Link to="http://sura.me" className={styles.btn}>
+        <Link to="http://sura.me" className="test">
           Sura.me
         </Link>
         <div />
-      </section>
+      </MainContainerStyle>
     </>
   )
 }

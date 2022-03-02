@@ -1,17 +1,45 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 import Img from 'gatsby-image'
-import * as styles from '../../styles/projects.module.css'
-import '../../styles/projects.module.css'
+import styled from 'styled-components'
+
+const PortfolioStyles = styled.div`
+  text-align: center;
+  }
+  h2 {
+    font-size: 3em;
+    margin-top: 80px;
+  }
+  h3 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+`
+
+const ProjectsStyles = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+  h3 {
+    text-align: center;
+    margin: 20px auto 0px;
+    font-weight: 500;
+  }
+  p {
+    color: #ccc;
+    margin-top: 4px;
+  }
+`
 
 function Projects({ data }) {
   const projects = data.allMarkdownRemark.nodes
   return (
     <>
-      <div className={styles.portfolio}>
+      <PortfolioStyles>
         <h2>Portfolio</h2>
         <h3>Projects & website </h3>
-        <div className={styles.projects}>
+        <ProjectsStyles>
           {projects.map(project => (
             <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
               <span>
@@ -21,8 +49,8 @@ function Projects({ data }) {
               </span>
             </Link>
           ))}
-        </div>
-      </div>
+        </ProjectsStyles>
+      </PortfolioStyles>
     </>
   )
 }

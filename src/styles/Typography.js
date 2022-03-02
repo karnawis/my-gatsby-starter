@@ -4,7 +4,7 @@ import fontMontserratBackup from '../assets/fonts/Montserrat-VariableFont_wght.w
 import fontMontserratBold from '../assets/fonts/Montserrat-ExtraBold.ttf'
 import fontMontserratBoldBackup from '../assets/fonts/Montserrat-ExtraBold.woff'
 /*
-//font swap so you have a fall back 
+// incorporate typography font swap so you have a fall back 
 // fluid type : an expression of how big the font is rather than strict
 // Fluid-type
 */
