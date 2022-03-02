@@ -1,59 +1,52 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
-import Layout from '../../components/Layout'
+import Img from 'gatsby-image'
 import * as styles from '../../styles/projects.module.css'
 import '../../styles/projects.module.css'
-import Img from 'gatsby-image'
 
-
-function Projects( {data} ) {
-
+function Projects({ data }) {
   const projects = data.allMarkdownRemark.nodes
   return (
-    <Layout>
+    <>
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & website </h3>
         <div className={styles.projects}>
-          {projects.map(project => 
-          (
-            <Link to={"/projects/" + project.frontmatter.slug} key={project.id} >
+          {projects.map(project => (
+            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
               <span>
                 <h3> {project.frontmatter.title} </h3>
                 <p> {project.frontmatter.stack} </p>
-                <Img fluid={project.frontmatter.thumb.childImageSharp.fluid}/>
+                <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
               </span>
             </Link>
-
-          )
-
-          )}
+          ))}
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 
-export default Projects 
+export default Projects
 
 export const query = graphql`
-query ProjectsPage {
-  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-    nodes {
-      frontmatter {
-        slug
-        stack
-        title
-        thumb {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+  query ProjectsPage {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+      nodes {
+        frontmatter {
+          slug
+          stack
+          title
+          thumb {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
+        id
       }
-      id
     }
   }
-}
 `

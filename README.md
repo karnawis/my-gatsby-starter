@@ -4,8 +4,6 @@ stack: HTML & CSS
 slug: readme
 ---
 
-Is it gatsby develop??
-
 # Highlights
 
 ## Gatsby starter 🚀
@@ -13,6 +11,7 @@ Is it gatsby develop??
 ### Running
 
 - `nvm use`
+- run ` gatsby develop`
 - run `yarn install` or `npm install` make sure you have
 - to run `yarn develop` and `yarn watch-css` or `npm run develop`
 - to run customised development `yarn super-develop`
@@ -20,6 +19,7 @@ Is it gatsby develop??
 
 ### Features
 
+- Uses eslint wesbos no-sweat configuration
 - added css preprocessor
 - added bootstrap components
 
@@ -30,8 +30,10 @@ Is it gatsby develop??
 
 # to do
 
+- check npm or yarn? like 'style-components didn't work with just yarn add, it worked with npm install'
 - use gatsby styled-component globalstyle.js
 - social media branch and react renderer
+- enhance SEO like Chris's blog
 - check whether to use node 12 or 14, Gatsby is asking for 14, how it is not compatible with many packages like font awesome, eslint..etc
 - resolve `gatsby develop` or `npm develop`
 - check node, npm, and yarn versions > upgraded

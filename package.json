@@ -33,14 +33,17 @@
     "gatsby": "^3.1.1",
     "gatsby-image": "^3.2.0",
     "gatsby-plugin-sharp": "^3.2.0",
+    "gatsby-plugin-styled-components": "^5.7.0",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-remark": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
     "node-sass-chokidar": "^1.5.0",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.6.3",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

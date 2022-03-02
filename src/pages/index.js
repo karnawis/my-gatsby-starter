@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
 import banner from '../images/banner.jpeg'
 import * as styles from '../styles/home.module.css'
 
@@ -9,9 +8,9 @@ import * as styles from '../styles/home.module.css'
 export default function Home({ data }) {
   // console.log(data)
   return (
-    <Layout>
+    <>
       <section className={styles.main}>
-        <img src={banner} width="100%" />
+        <img src={banner} width="100%" alt="test" />
         <h3>a software engineer, artist and activist</h3>
         <p>
           Hi my name is Sura. My passion for art, technology and human rights
@@ -29,7 +28,7 @@ export default function Home({ data }) {
         </Link>
         <div />
       </section>
-    </Layout>
+    </>
   )
 }
 

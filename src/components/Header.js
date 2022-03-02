@@ -1,12 +1,11 @@
 import React from 'react'
-import { Jumbotron, Grid, Button } from 'react-bootstrap'
+import { Jumbotron } from 'react-bootstrap'
 import Navigation from './Navigation'
-import * as styles from '../styles/header.module.css'
 import SEO from './SEO'
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <header>
       <SEO title="gatsby starter" />
       <Navigation />
       <Jumbotron>
