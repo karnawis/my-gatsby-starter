@@ -1,57 +1,55 @@
-import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
+const NavStyles = styled.nav`
+  ul {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  li {
+    order: 1;
+  }
+  a {
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      color: var(--red);
+    }
+    @media (max-width: 800px) {
+      font-size: 2rem;
+    }
+    /* &[aria-current='page'] {
+      color: var(--red);
+    } */
+  }
+`
 
 function Navigation() {
-    const data = useStaticQuery(graphql`
-    query SiteInfo {
-      site {
-        siteMetadata{
-            description 
-            title
-          }
-      }
-    }
-  `)
-
-   const { title, description } = data.site.siteMetadata
-    return (
-        <Navbar sticky="top" id="navbar"className="navbar" collapseOnSelect bg="light" expand="sm">
-          <Container>
-              <Navbar.Brand href="#home">{title}</Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-          </Container>
-        </Navbar>
-    )
+  return (
+    <NavStyles>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects to portfolio</Link>
+        </li>
+        <li>
+          <Link to="https://medium.com/@surakarnawi">Blog</Link>
+        </li>
+      </ul>
+    </NavStyles>
+  )
 }
 
 export default Navigation
-
-/*
-<nav className="navbar navbar-inverse navbar-fixed-top">
-          <div className="container">
-          <div class="navbar-header">
-              <Link to="/"><h1>{ title }</h1></Link>
-          </div>
-          
-            <div className="links nav navbar-nav">
-                <Link to="/">Home</Link> 
-                <Link to="/about">About</Link> 
-                <Link to="/projects">Projects to portfolio</Link>
-                <Link to="#contact">Contact</Link>
-                <Link to="https://medium.com/@surakarnawi">Blog</Link>
-            </div>
-            <h2>{ description }</h2>
-          </div>
-        </nav>
-
-*/

@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 // import bg from ''
-import bg from '../assets/images/pattern.svg'
+// import bg from '../assets/images/pattern.svg'
+import bg from '../assets/images/groovepaper.png'
+
 /*
   check out chris Choir - font-type fluid using clamp
 */
@@ -10,13 +12,15 @@ const GlobalStyles = createGlobalStyle`
     --red: #ff5252;
     --white: #fff;
     --salmon: #ff7878;
+    --black: #000;
 }
 
 html {
   background-image: url(${bg});  
   background-size: 450px;
   background-attachment: fixed;
-  font-size: 2rem;
+  color: --black;
+  font-size: 10px;
   scrollbar-width: thin;
   scrollbar-color: var(--red) var(--white);
 }
@@ -52,6 +56,20 @@ button {
 
   img {
     max-width: 100%;
+  }
+  a {
+    color: inherit;
+  }
+  footer {
+    
+    svg {
+      font-size: inherit;
+      width: 20px;
+    }
+  }
+
+  .page-footer {
+    text-align: center;
   }
 `
 

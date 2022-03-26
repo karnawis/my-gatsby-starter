@@ -29,7 +29,6 @@ const MainContainerStyle = styled.section`
 `
 
 export default function Home({ data }) {
-  // console.log(data)
   return (
     <>
       <MainContainerStyle>
@@ -55,26 +54,28 @@ export default function Home({ data }) {
   )
 }
 
+// export const query = graphql`
+//   query MyQuery {
+//     site {
+//       host
+//       port
+//       siteMetadata {
+//         contact
+//         description
+//         title
+//       }
+//     }
+//   }
+// `
+
 export const query = graphql`
-  query MyQuery {
-    site {
-      host
-      port
-      siteMetadata {
-        contact
-        description
-        title
+  query Banner {
+    file(relativePath: { eq: "abstract-art-red-green-painting" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
 `
-
-// query Banner {
-//   file(relativePath: {eq: "abstract-art-red-green-painting"}) {
-//     childImageSharp {
-//       fluid {
-//         ...GatsbyImageSharpFluid
-//       }
-//     }
-//   }
-// }
